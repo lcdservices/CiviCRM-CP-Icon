@@ -8,7 +8,7 @@
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>brian@lcdservices.biz</authorEmail>
 	<authorUrl>http://www.lcdservices.biz/</authorUrl>
-	<version>1.0</version>
+	<version>1.1</version>
 	<description>This module shows a link to CiviCRM in the Joomla control panel. After installing, enable the module in Module Manager > Administrator and assign to the "icon" position.</description>
 	<files>
 		<filename module="mod_civicrmcpicon">mod_civicrmcpicon.php</filename>
