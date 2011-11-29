@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<install type="module" version="1.5" client="administrator" group="icon">
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<install type="module" version="1.5" client="administrator" method="upgrade">
 	<name>CiviCRM Control Panel Icon</name>
 	<author>Brian Shaughnessy</author>
 	<creationDate>January, 2009</creationDate>
@@ -20,4 +21,15 @@
 			<option value="0">No caching</option>
 		</param>
 	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			    <field name="cache" type="list" label="Caching"
+					description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
 </install>
