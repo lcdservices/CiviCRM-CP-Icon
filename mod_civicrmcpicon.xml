@@ -3,12 +3,12 @@
 <install type="module" version="1.5" client="administrator" method="upgrade">
 	<name>CiviCRM Control Panel Icon</name>
 	<author>Brian Shaughnessy</author>
-	<creationDate>January, 2009</creationDate>
+	<creationDate>February, 2012</creationDate>
 	<copyright>(c) Lighthouse Consulting and Design. All rights reserved.</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>brian@lcdservices.biz</authorEmail>
 	<authorUrl>http://www.lcdservices.biz/</authorUrl>
-	<version>1.1</version>
+	<version>1.2</version>
 	<description>This module shows a link to CiviCRM in the Joomla control panel. After installing, enable the module in Module Manager > Administrator and assign to the "icon" position.</description>
 	<files>
 		<filename module="mod_civicrmcpicon">mod_civicrmcpicon.php</filename>
