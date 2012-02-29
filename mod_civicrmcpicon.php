@@ -47,6 +47,18 @@ if (!defined( '_JOS_CIVICRMCPICON_MODULE' ))
 		$('cpanel').grab(civicrmIcon);
 	} catch(e) {	
 	}
+        <?php if(version_compare(JVERSION, '2.5.0', 'lt')): ?>
+	try {
+	    $('cpanel').grab(civicrmIcon);
+	} catch(e) {
+	}
+	<?php else: ?>
+	try {
+	    $$('div.cpanel')[0].grab(civicrmIcon,'top');
+	} catch(e) {
+	}
+	<?php endif; ?>
     </script>
     <?php
 }
+
