@@ -32,32 +32,33 @@ if (!defined( '_JOS_CIVICRMCPICON_MODULE' ))
     ?>
     <div class="icon-wrapper" id="civicrmicon">
         <?php
-			$link = 'index.php?option=com_civicrm&task=civicrm/dashboard&reset=1';
-			quickiconButtonCiviCRM( $link, 'icon-48-civicrm.png', JText::_( 'CiviCRM Home' ) );
+            $link = 'index.php?option=com_civicrm&task=civicrm/dashboard&reset=1';
+            quickiconButtonCiviCRM( $link, 'icon-48-civicrm.png', JText::_( 'CiviCRM Home' ) );
         ?>
     </div>
     <!--Borrowed this method of injecting into the quick icons panel from Akeeba Backup (www.akeebabackup.com)-->
     <script lang="text/javascript">
-	var civicrmIcon = $('civicrmicon');
-	try {
-		var civicrmIconParent = $('civicrmicon').getParent().getParent();
-		if(civicrmIconParent.attributes.class.textContent == 'panel') {
-			civicrmIconParent.setStyle('display','none');
+    var civicrmIcon = $('civicrmicon');
+    try {
+        var civicrmIconParent = $('civicrmicon').getParent().getParent();
+        if(civicrmIconParent.attributes.class.textContent == 'panel') {
+            civicrmIconParent.setStyle('display','none');
 		}
-		$('cpanel').grab(civicrmIcon);
-	} catch(e) {	
-	}
+
         <?php if(version_compare(JVERSION, '2.5.0', 'lt')): ?>
-	try {
-	    $('cpanel').grab(civicrmIcon);
-	} catch(e) {
-	}
-	<?php else: ?>
-	try {
-	    $$('div.cpanel')[0].grab(civicrmIcon,'top');
-	} catch(e) {
-	}
-	<?php endif; ?>
+            try {
+                $('cpanel').grab(civicrmIcon);
+            } catch(e) {
+            }
+        <?php else: ?>
+            try {
+                $$('div.cpanel')[0].grab(civicrmIcon,'top');
+            } catch(e) {
+            }
+        <?php endif; ?>
+
+    } catch(e) {
+    }
     </script>
     <?php
 }
